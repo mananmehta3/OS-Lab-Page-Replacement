@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Page Replacement algorithm</title>
+<link rel="stylesheet" href="css/background.css">
+	
+
+    </head>
+    <body>
+        <table height = "700" widhth = "100%">
+	<div id="example1">
+
+<div class="col-md">
+          
+            <ul class="list-unstyled">
+              
+		 <a href="../../../../home.html" class="nav-link"><span>Home</span></a></li>
+              <a href="intro1.html" class="nav-link"><span>Introduction</span></a></li>
+             <a href="fifo.html" class="nav-link"><span>FIFO</span></a></li>
+              <a href="lifo.html" class="nav-link"><span>LIFO</span></a></li>
+              <a href="lru.html" class="nav-link"><span>LRU</span></a></li>
+              <a href="optimal.html" class="nav-link"><span>Optimal</span></a></li>
+              <a href="random.html" class="nav-link"><span>Random</span></a></li>
+		<a href="belady.html" class="nav-link"><span>Beladys Anomaly</span></a></li>
+		<a href="comparison.html" class="nav-link"><span>comparison</span></a></li>
+            </ul>
+         <br>
+<br>
+<br>
+<br>
+
+</header>
+<code>
+			<h1><em><strong><ins><center>Page Replacement algorithm</center></ins></em></strong></h1>
+
+                         <Code><h2><ul>
+                     
+
+                  
+<ul>A computer system has a limited amount of memory. Adding more memory physically is very costly. Therefore most modern computers use a combination of both hardware and software to allow the computer to address more memory than the amount physically present on the system. This extra memory is actually called Virtual Memory.</ul>
+<br>
+<ul>Virtual Memory is a storage allocation scheme used by the Memory Management Unit(MMU) to compensate for the shortage of physical memory by transferring data from RAM to disk storage. It addresses secondary memory as though it is a part of the main memory. Virtual Memory makes the memory appear larger than actually present which helps in the execution of programs that are larger than the physical memory.</ul>
+
+<br>
+<ul>Virtual Memory can be implemented using Paging</ul>
+
+
+<br><br><br>
+
+<li><h2><ins><em><strong>What is Paging?</strong></em></ins></li>
+<br>
+<br>
+
+  <ul>Paging is a process of reading data from, and writing data to, the secondary storage. It is a memory management scheme that is used to retrieve processes from the secondary memory in the form of pages and store them in the primary memory. The main objective of paging is to divide each process in the form of pages of fixed size. These pages are stored in the main memory in frames. Pages of a process are only brought from the secondary memory to the main memory when they are needed.</ul>
+  <br>
+  <ul>When an executing process refers to a page, it is first searched in the main memory. If it is not present in the main memory, a page fault occurs.</ul>
+  <br>
+  <ul>  Page Fault is the condition in which a running process refers to a page that is not loaded in the main memory.</ul>
+  <br>
+  <ul>In such a case, the OS has to bring the page from the secondary storage into the main memory. This may cause some pages in the main memory to be replaced due to limited storage. A Page Replacement Algorithm is required to decide which page needs to be replaced.</ul>
+<br><br><br>
+
+<li><h2><ins><em><strong>Page Replacement Algorithm</strong></em></ins></li>
+<br><br>
+
+<ul>Page Replacement Algorithm decides which page to remove, also called swap out when a new page needs to be loaded into the main memory. Page Replacement happens when a requested page is not present in the main memory and the available space is not sufficient for allocation to the requested page.</ul>
+<br>
+<ul>When the page that was selected for replacement was paged out, and referenced again, it has to read in from disk, and this requires for I/O completion. This process determines the quality of the page replacement algorithm: the lesser the time waiting for page-ins, the better is the algorithm.</ul>
+<br>
+<ul>A page replacement algorithm tries to select which pages should be replaced so as to minimize the total number of page misses. There are many different page replacement algorithms. These algorithms are evaluated by running them on a particular string of memory reference and computing the number of page faults. The fewer is the page faults the better is the algorithm for that situation.</ul>
+<br>
+
+<ul>If a process requests for page and that page is found in the main memory then it is called page hit, otherwise page miss or page fault.</ul>
+<br><br>
+<li><h2><h2><ins><em><strong>Some Page Replacement Algorithms :</li>
+<br><br>
+<ol><li>First In First Out (FIFO)</li>
+<li>Least Recently Used (LRU)</li>
+<li>Optimal Page Replacement</li>
+<li>Least Recently used algorithm</li</ol>
+
+                    </h2>  
+</code>
+                    <br/>
+                    <br/>
+</ul>
+
+  <br><br><br><br><br><br><br>
+  <ul>
+    <li><h2><ins><em><strong>About Us</strong></em></ins></h2></li>
+  </ul>
+  <li><h2><ins><em><strong>Team:-</strong></em></ins></h2></li>
+  <ol><li><h2><em><strong>Manan Mehta - 19BIT149</strong></em></h2></li>
+    <li><h2><em><strong>Apurva Patel - 19BIT011</strong></em></h2></li>
+    <li><h2><em><strong>Arpit Patel - 19BIT013</strong></em></h2></li>
+    <li><h2><em><strong>Queeny Jain - 19BIT106</strong></em></h2></li>
+    <li><h2><em><strong>Vaidehi Kayastha - 19BIT125</strong></em></h2></li></ol>
+    </body>
+</html>

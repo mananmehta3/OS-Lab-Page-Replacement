@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Belady's Anomaly</title>
+<link rel="stylesheet" href="css/background.css">
+	
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+	<div id="example1">
+	<header>
+<div class="col-md">
+          
+            <ul class="list-unstyled">
+              
+		 <a href="../../../../home.html" class="nav-link"><span>Home</span></a></li>
+              <a href="intro1.html" class="nav-link"><span>Introduction</span></a></li>
+   <a href="fifo.html" class="nav-link"><span>FIFO</span></a></li>
+              <a href="lifo.html" class="nav-link"><span>LIFO</span></a></li>
+              <a href="lru.html" class="nav-link"><span>LRU</span></a></li>
+              <a href="optimal.html" class="nav-link"><span>Optimal</span></a></li>
+              <a href="random.html" class="nav-link"><span>Random</span></a></li>
+		<a href="belady.html" class="nav-link"><span>Beladys Anomaly</span></a></li>
+		<a href="comparison.html" class="nav-link"><span>comparison</span></a></li>
+            </ul>
+         <br>
+<br>
+<br>
+<br>
+		</header>
+  
+
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="ftco-animate">
+
+          <h1><center><em><strong><ins>Belady's Anomaly</ins></strong></em></center></h1>
+            <code>
+            <ul>
+                <li><h2>Bélády’s anomaly is the name given to the phenomenon where increasing the number of page frames results in an increase in the number of page faults for a given memory access pattern.</h2></li>
+                <li><h2>This phenomenon is commonly experienced in following page replacement algorithms:
+                    <br/><br/>
+
+                        <ol>
+                    <li>First in first out (FIFO)</li> 
+                    <li>Second chance algorithm</li> 
+                    <li>Random page replacement algorithm</li> </ol>
+                                <br/>
+                    <li>The other two commonly used page replacement algorithms are Optimal and LRU, but Belady’s Anamoly can never occur in these algorithms for any reference string as they belong to a class of stack based page replacement algorithms.</li>
+
+                    
+                    <li><h3><ins>Example:-</ins></h3></li>
+                    <br/>
+                    <li>Assuming a system that has no pages loaded in the memory and uses the FIFO Page replacement algorithm. Consider the following reference string:</li>
+                    <li><h3>String:- 1 2 3 4 1 2 5 1 2 3 4 5 </h3></li>
+                    <li><h3>Case 1:- No. of frames = 3</h3></li>
+                    <img src="img\page replacement\belady1.png"> 
+                    <li>Using FIFO page replacement algorithm yields a total of 9 page faults. The diagram below illustrates the pattern of the page faults occurring in the example.</li>
+                            <br/>
+
+                    <li><strong> Case  2:- No. of frames = 4</strong></li> 
+                    <img src= "img\page replacement\belady2.png">
+                    <li><strong>the given reference string on using FIFO page replacement algorithm yields a total of 10 page faults. The diagram below illustrates the pattern of the page faults occurring in the example.</strong></li>
+                </ul>
+        </code>
+ <br>
+<br>
+<br>
+<br>
+<br>
+   <br><br>
+          <div id="algo">
+            <div class="container">
+              <strong>Reference String:</strong>
+              <input class="input" type="text" style="width: 55%;" id="input">
+              <!-- <strong>Frames:</strong> <input class="input" type="number" id="frames" style="width: 10%;" min=1 max=10> -->
+              <button class="input" id="submit" style="width: 10%;">Submit</button>
+              <div>
+                <br>
+                <div id="chartContainer"></div>
+                <table id="table" class="container text-center">
+                </table>
+                <br>
+                <div id="summary" class="d-flex justify-content-around font-weight-bold text-uppercase"> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- .col-md-8 -->
+  </section> <!-- .section -->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="js/belady.js"></script>
+</body>
+
+</html>

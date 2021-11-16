@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>FIFO</title>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+ 
+<link rel="stylesheet" href="css/background.css">
+	
+
+
+
+    
+  
+
+
+  
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+
+	<div id="example1">
+	<header>
+<div class="col-md">
+          
+            <ul class="list-unstyled">
+              
+		 <a href="../../../../home.html" class="nav-link"><span>Home</span></a></li>
+              <a href="intro1.html" class="nav-link"><span>Introduction</span></a></li>
+   <a href="fifo.html" class="nav-link"><span>FIFO</span></a></li>
+              <a href="lifo.html" class="nav-link"><span>LIFO</span></a></li>
+              <a href="lru.html" class="nav-link"><span>LRU</span></a></li>
+              <a href="optimal.html" class="nav-link"><span>Optimal</span></a></li>
+              <a href="random.html" class="nav-link"><span>Random</span></a></li>
+		<a href="belady.html" class="nav-link"><span>Beladys Anomaly</span></a></li>
+		<a href="comparison.html" class="nav-link"><span>comparison</span></a></li>
+            </ul>
+         <br>
+<br>
+<br>
+<br>
+		</header>
+	        <code>
+			<h1><em><strong><ins><center>FIFO Algorithm</center></ins></strong></em></h1>
+	           
+	
+	            <h2><strong><em><ins>First In First Out (FIFO) :–</ins></em></strong></h2>
+	            <ul>
+	                <li><h3>First-In-First-Out (FIFO) Replacement.</h3></li>
+	                <li><h3>This is the simplest page replacement algorithm.</h3></li>
+	                <li><h3>FIFO is not a stack algorithm. In certain cases, the number of page faults can actually increase when more frames are allocated to the process.</h3></li>
+	                <li><h3>In this algorithm, the operating system keeps track of all pages in the memory in a queue, the oldest page is in the front of the queue. When a page needs to be replaced page in the front of the queue is selected for removal.</h3></li>
+	                <br/><br/>
+	                
+	            </ul>
+	            
+	            <h3><strong><em><ins><h3>Example-</h3></ins></em></strong></h3>
+	                <ul>
+	                    <li><h3>>Consider page reference string 1, 3, 0, 3, 5, 6 with 3 page frames.Find number of page faults.</h3></li>
+	                    <br/>
+	                    <img src="img\page replacement\fifo2.png">
+	                    <li><h3>Initially all slots are empty, so when 1, 3, 0 came they are allocated to the empty slots —> 3 Page Faults.</h3></li>
+	                    <li><h3>when 3 comes, it is already in  memory so —> 0 Page Faults.</li>
+	                    <li><h3>Then 5 comes, it is not available in  memory so it replaces the oldest page slot i.e 1. —>1 Page Fault.</h3></li>
+	                    <li><h3>6 comes, it is also not available in memory so it replaces the oldest page slot i.e 3 —>1 Page Fault.</h3></li>
+	                    <li><h3>Finally when 3 come it is not avilable so it replaces 0 1 page fault</h3></li>
+	                </ul>
+	        </code>
+<br>
+<br>
+<br>
+<br>
+<br>
+	        <strong>Reference String:</strong>
+              <input class="input" type="text"  id="input">
+<br>
+              <strong>Frames:</strong> 
+<input class="input" type="number" id="frames" style="width: 10%;" min=1 max=10>
+
+              <button class="input"  id="submit" style="width: 10%;">Submit</button>
+             <br>		
+             <div>
+                <br>
+                <table id="table" class="container text-center">
+                </table>
+                <br>
+				<br>
+				<div id="summary" class="d-flex justify-content-around font-weight-bold text-uppercase"> </div>
+               
+	</div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/fifo.js"></script>
+</body>
+
+</html>

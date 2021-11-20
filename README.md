@@ -1,11 +1,11 @@
 # OS-Lab-Page-Replacement
 
 **Team -** 
-MANAN MEHTA - 19BIT149
-APURVA PATEL - 19BIT011
-ARPIT PATEL - 19BIT013
-QUEENY JAIN - 19BIT106
-VAIDEHI Kayastha - 19BIT125
+MANAN MEHTA - 19BIT149<br/>
+APURVA PATEL - 19BIT011<br/>
+ARPIT PATEL - 19BIT013<br/>
+QUEENY JAIN - 19BIT106<br/>
+VAIDEHI Kayastha - 19BIT125<br/>
 
 **Overview**
 We have designed this website to provide you with information and working of the Page Replacement Algorithms. The homepage and algorithm pages are mainly designed using HTML5 and CSS3. The implementation part of the algorithm is done using JavaScript. We have also used canvasjs.com library for plotting graphs. Our website is made to be very responsive and can be viewed on any device. 

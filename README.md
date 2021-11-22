@@ -83,4 +83,4 @@ And it's done.<br/>
 **References**<br/>
 https://www.geeksforgeeks.org/<br/>
 https://stackoverflow.com/<br/>
-https://www.dataschool.io/how-to-contribute-on-github/<br/>
+https://www.dataschool.io/<br/>
